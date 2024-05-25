@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <base href="https://cdn.jsdelivr.net/gh/linuxguist/tabs@main/">
+
+    <link href="styles.pure.ii.css" rel="stylesheet" />
+
+    <style>
+
+        .entry-content {
+            word-wrap: normal;
+        }
+
+        .entry-content h5 {
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+
+        .PriceLable {
+            color: yellow;
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+
+        .PriceLableMulti {
+            color: #444;
+            font-size: 22px;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+            padding-left: 0px;
+        }
+
+        .MyTable th {
+            background: #005da4;
+            position: sticky;
+            top: 80px;
+        }
+
+        .MyTable td:nth-child(2), .MyTable td:nth-child(3), .MyTable td:nth-child(4), .MyTable td:nth-child(5) {
+            width: 190px;
+            text-align: center !important;
+        }
+
+        .MyTable td {
+            padding: 3px;
+            font-weight: 500;
+            color: #005da4;
+            border: 0;
+        }
+
+            .MyTable td i {
+                font-size: 18px;
+                color: #005da4;
+            }
+
+        .MyTableFeatureListRow1 {
+            width: 160px;
+            height: 70px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            border-right: solid 2px #fff;
+            font-size: 20px;
+        }
+
+            .MyTableFeatureListRow1 span {
+                font-weight: 400;
+                text-align: center;
+                font-size: 13px;
+                vertical-align: middle;
+            }
+
+        .PriceLable {
+            color: yellow;
+            font-size: 14px;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+
+        .MyTable td:nth-child(1) {
+            padding-left: 26px;
+        }
+
+        .MyTable {
+            font-family: Roboto,sans-serif;
+            color: #444;
+            border: 1px solid #e5f1f9;
+        }
+
+            .MyTable td {
+                padding: 3px;
+                font-weight: 500;
+                color: #005da4;
+                border: 0;
+            }
+
+            .MyTable td {
+                padding: 3px;
+                font-weight: 500;
+                color: #005da4;
+                border: 0;
+            }
+
+        .tableRowHead {
+            font-weight: 600;
+            background: #e5f1f9;
+            font-size: 18px;
+            color: #005da4;
+        }
+
+        .MyTableFeatureListRow1 .PriceLableMulti span {
+            color: #444;
+            font-size: 14px;
+            line-height: 28px;
+            width: 100%;
+        }
+
+        .pad0 {
+            padding: 0px;
+        }
+
+        .PriceTable1stColumn {
+            color: #005da4;
+            font-size: 30px;
+            font-weight: 600;
+            border-right: 2px solid #fff;
+            vertical-align: middle;
+            /*padding-left: 26px;*/
+            text-align: center;
+            background: #F6FAFD;
+        }
+
+        .PriceTable2ndColumn {
+            vertical-align: middle;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*border-left: 1px solid #005da4;*/
+        }
+
+        .PriceTable3rdColumn {
+            vertical-align: middle;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-left: 1px solid #005da4;
+        }
+
+        .PriceTable4thColumn {
+            vertical-align: middle;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-left: 1px solid #005da4;
+        }
+
+        .PriceTable5thColumn {
+            vertical-align: middle;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-left: 1px solid #005da4;
+        }
+
+        /*TAB*/
+
+
+        .tablink {
+            border-radius: 12px 12px 0px 0px;
+            background-color: #e5f1f9;
+            color: #005da4;
+            border: 1px solid;
+            outline: none;
+            cursor: pointer;
+            padding: 2px 16px;
+            font-size: 21px;
+            /*width: 15%;*/
+            font-weight: bold;
+            margin-top: 23px;
+            text-align: center;
+        }
+
+        /*.tablink:hover {
+                background-color: #777;
+            }*/
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 6px 0px;
+            height: 100%;
+        }
+
+        #Home {
+            background-color: #fff;
+        }
+
+        #News {
+            background-color: #fff;
+        }
+
+        .label2:after {
+            content: '\A';
+            white-space: pre;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2 class="elementor-heading-title elementor-size-default" style="text-align: center; padding-top: 60px;padding-bottom: 20px;">Product or Service Feature List Comparision Across Editions</h2>
+
+<div class="ast-col-sm-12 ast-col-xs-12">
+
+<table class="MyTable">
+<thead style="line-height: 1.3">
+<tr style="background-color: #005da4;">
+<th style="color: #fff; font-size: 26px; font-weight: 600; border-right: 2px solid #fff; vertical-align: middle;">&nbsp; &nbsp;Feature List</th>
+<th class="MyTableFeatureListRow1">Express
+    <br />
+    <span>(Micro Business)</span>
+    <a href="#PriceList">
+        <p class="PriceLable">
+            100% FREE
+        </p>
+    </a>
+</th>
+<th class="MyTableFeatureListRow1">Basic
+    <br />
+    <span>(Micro & Small Business)</span>
+    <a href="#PriceList">
+        <p class="PriceLable">
+            Check Pricing
+        </p>
+    </a>
+    
+
+</th>
+<th class="MyTableFeatureListRow1">Standard
+    <br />
+    <span>(Small & Medium Business)</span>
+    <a href="#PriceList">
+        <p class="PriceLable">
+            Check Pricing
+        </p>
+    </a>
+    
+</th>
+<th class="MyTableFeatureListRow1">Enterprise
+    <br />
+    <span>(Large Business)</span>
+    <a href="#PriceList">
+        <p class="PriceLable">
+            Check Pricing
+        </p>
+    </a>
+    
+</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+<td colspan="5" class="tableRowHead" style="font-weight: 600;">GENERAL FEATURES</td>
+                            </tr>
+                            <tr>
+<td>Mutli-Company / Multi-Financial Year</td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+
+                            </tr>
+                            <tr>
+<td>Reports Export (Plain File / HTML / PDF / MS-Excel)</td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td>Graphs & Charts</td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>User-configurable Invoice / Vouchers / Documents </td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Images / Notes in Account / Item Masters</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Provision for Invoice Printing in Second Language</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Payroll and CRM</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td colspan="5" style="font-weight: 600;" class="tableRowHead">FINANCIAL ACCOUNTING</td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td>All Books of Accounts </td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Interest Calculation with Automatic Posting in Accounts</td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Handling of Post-dated Cheques (PDC)</td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Configurable Balance Sheet & Profit / Loss A/c</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Multi-Currency Accounting</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Broker-wise / Royalty Calculation</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td colspan="5" style="font-weight: 600;" class="tableRowHead">MULTI-LOCATION INVENTORY</td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+
+                            <tr>
+<td>All books of Inventory </td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Stock Valuation on Multiple Methods</td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Provision for Free Qty in Inventory Vouchers</td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Primary, Alternate and Packaging Unit for each Item</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Item Batch / Serial No / Parametrized-wise Maintainance</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+
+                            <tr>
+<td>Enhanced Party / Date / Item-Qty-wise Price Structure(s) </td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td>Item-Qty-wise Price / Discount Slabs</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td>BOM / Production Planning</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td>Production / Unassemble</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td>Job work Management with Auto Posting in Accounts</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+<td>Physical Stock Voucher</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+
+
+
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td colspan="5" style="font-weight: 600;" class="tableRowHead">SCHEME MANAGEMENT (FMCG / RETAIL)</td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+
+                            <tr>
+<td>Define Period-based Schemes (Date & Time)</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Scheme based on Item / Group / Invoice Amount</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+
+
+
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td colspan="5" style="font-weight: 600;" class="tableRowHead">MATERIAL WORKFLOW</td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+
+
+                            <tr>
+<td>Quotations / Order / Challan Management</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Purchase Indent Management</td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td colspan="5" style="font-weight: 600;" class="tableRowHead">GST / VAT REPORTS</td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+
+
+                            <tr>
+<td>GST / VAT Summary</td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>GST e-Returns (GSTR-1 / GSTR-3B / GSTR-4 / ITC-04)</td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>GST Registers (Configurable)</td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>GST Returns in JSON Fomat for Direct Upload to Portal</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Automatic Eway Bill / E-Invoice Genearation</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>GSTR-2A Reconciliation</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr>
+<td>Online GSTIN Validation</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+
+                            <tr id="PriceList">
+<td colspan="5"></td>
+                            </tr>
+                            <tr>
+<td colspan="5" style="font-weight: 600;" class="tableRowHead">TDS / TCS </td>
+                            </tr>
+                            <tr>
+<td colspan="5"></td>
+                            </tr>
+
+                            <tr>
+<td>TDS / TCS</td>
+<td></td>
+<td></td>
+<td>
+    <i class="fa fa-check"></i></td>
+<td>
+    <i class="fa fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br />
+
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the current URL, removing any fragment
+  var documentUrl = document.location.href.replace(/#.*$/, '')
+
+  // Iterate through all links
+  var linkEls = document.getElementsByTagName('A')
+  for (var linkIndex = 0; linkIndex < linkEls.length; linkIndex++) {
+    var linkEl = linkEls[linkIndex]
+
+    // Ignore links that don't begin with #
+    if (!linkEl.getAttribute('href').match(/^#/)) {
+      continue;
+    }
+
+    // Convert to an absolute URL
+    linkEl.setAttribute('href', documentUrl + linkEl.getAttribute('href'))
+  }
+})    
+</script>
+
+</body>
+</html>
